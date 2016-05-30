@@ -1,0 +1,8 @@
+T__0=1
+ALPHAS=2
+CONTAINS=3
+DIGIT=4
+INT=5
+WS=6
+'$'=1
+'contains'=3

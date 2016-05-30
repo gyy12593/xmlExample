@@ -1,0 +1,10 @@
+T__0=1
+ALPHAS=2
+CONTAINS=3
+EVERY=4
+DIGIT=5
+INT=6
+WS=7
+'$'=1
+'contains'=3
+'every'=4

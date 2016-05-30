@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--示例 XML 文件由 XMLSpy v2006 U 创建 (http://www.altova.com)-->
+<relationshipSet xmlns="http://www.ws.zc/xml-namespace/informationModel/zcGenericModelRelationship" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ws.zc/xml-namespace/informationModel/zcGenericModelRelationship
+D:\Backup\UML-解析\UML-解析(桌面版)\新\zcGenericModelRelationship.xsd">
+	<containmentList>
+		<containmentInfo>
+			<containmentRelationshipName>ROOT-School</containmentRelationshipName>
+			<superiorClass>ROOT</superiorClass>
+			<superiorClassMultiplicity>1</superiorClassMultiplicity>
+			<subordinateClass>School</subordinateClass>
+			<subordinateClassMultiplicity>0..*</subordinateClassMultiplicity>
+			<namingAttribute>schoolID</namingAttribute>
+		</containmentInfo>
+		<containmentInfo>
+			<containmentRelationshipName>Class-Student</containmentRelationshipName>
+			<superiorClass>Class</superiorClass>
+			<superiorClassMultiplicity>1</superiorClassMultiplicity>
+			<subordinateClass>Student</subordinateClass>
+			<subordinateClassMultiplicity>1..*</subordinateClassMultiplicity>
+			<namingAttribute>studentNo</namingAttribute>
+		</containmentInfo>
+		<containmentInfo>
+			<containmentRelationshipName>School-Class</containmentRelationshipName>
+			<superiorClass>School</superiorClass>
+			<superiorClassMultiplicity>1</superiorClassMultiplicity>
+			<subordinateClass>Class</subordinateClass>
+			<subordinateClassMultiplicity>1..*</subordinateClassMultiplicity>
+			<namingAttribute>classID</namingAttribute>
+		</containmentInfo>
+		<containmentInfo>
+			<containmentRelationshipName>School-Teacher</containmentRelationshipName>
+			<superiorClass>School</superiorClass>
+			<superiorClassMultiplicity>1</superiorClassMultiplicity>
+			<subordinateClass>Teacher</subordinateClass>
+			<subordinateClassMultiplicity>1..*</subordinateClassMultiplicity>
+			<namingAttribute>teacherID</namingAttribute>
+		</containmentInfo>
+	</containmentList>	
+	<associationList>
+		<associationInfo>
+			<associationRelationshipName>NUll</associationRelationshipName>
+			<associationDirection>bidirectional</associationDirection>
+			<fromClass>Teacher</fromClass>
+			<fromAssociationAttribute>classList</fromAssociationAttribute>
+			<fromMultiplicity>0..*</fromMultiplicity>
+			<toClass>Class</toClass>
+			<toAssociationAttribute>teacherList</toAssociationAttribute>
+			<toMultiplicity>1..*</toMultiplicity>
+		</associationInfo>
+		<associationInfo>
+			<associationRelationshipName>NULL</associationRelationshipName>
+			<associationDirection>unidirectional</associationDirection>
+			<fromClass>Person</fromClass>
+			<fromAssociationAttribute>friendList</fromAssociationAttribute>
+			<fromMultiplicity>0..*</fromMultiplicity>
+			<toClass>Person</toClass>
+			<toAssociationAttribute>NULL</toAssociationAttribute>
+			<toMultiplicity>0..*</toMultiplicity>
+			</associationInfo>
+		</associationList>
+</relationshipSet>
